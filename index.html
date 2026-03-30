@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chambea — Conecta con los mejores profesionales de Venezuela</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">Chambea</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#categorias">Categorías</a></li>
+        <li><a href="#trabajadores">Profesionales</a></li>
+        <li><a href="#" class="btn-nav-outline" id="openSignupNav">Soy trabajador</a></li>
+        <li><a href="#" class="btn-nav">Contratar ahora</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#como-funciona" class="mobile-link">Cómo funciona</a></li>
+      <li><a href="#categorias" class="mobile-link">Categorías</a></li>
+      <li><a href="#trabajadores" class="mobile-link">Profesionales</a></li>
+      <li><a href="#" class="mobile-link" id="openSignupMobile">Registrarme como trabajador</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-badge">🇻🇪 Hecho para Venezuela</div>
+      <h1 class="hero-title">
+        Encuentra al experto<br/>
+        que <span class="highlight">necesitas hoy</span>
+      </h1>
+      <p class="hero-subtitle">
+        Plomeros, electricistas, pintores, carpinteros y más — verificados, confiables y listos para chambear.
+      </p>
+
+      <!-- SEARCH BAR -->
+      <div class="search-bar">
+        <div class="search-field">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="¿Qué necesitas? (ej. plomero, pintor...)" />
+        </div>
+        <div class="search-divider"></div>
+        <div class="search-field">
+          <span class="search-icon">📍</span>
+          <select id="cityFilter">
+            <option value="">Todas las ciudades</option>
+            <option value="Caracas" selected>Caracas</option>
+            <option value="Maracaibo">Maracaibo</option>
+            <option value="Valencia">Valencia</option>
+            <option value="Barquisimeto">Barquisimeto</option>
+          </select>
+        </div>
+        <button class="btn-search" id="searchBtn">Buscar</button>
+      </div>
+
+      <div class="hero-tags">
+        <span class="tag" data-cat="Plomero">🔧 Plomería</span>
+        <span class="tag" data-cat="Electricista">⚡ Electricidad</span>
+        <span class="tag" data-cat="Pintor">🎨 Pintura</span>
+        <span class="tag" data-cat="Limpieza">🧹 Limpieza</span>
+        <span class="tag" data-cat="Carpintero">🪚 Carpintería</span>
+        <span class="tag" data-cat="Aire acondicionado">❄️ A/C</span>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="container stats-row">
+        <div class="stat">
+          <span class="stat-num">2,400+</span>
+          <span class="stat-label">Trabajadores verificados</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">18,000+</span>
+          <span class="stat-label">Chambes completados</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">4.8 ★</span>
+          <span class="stat-label">Calificación promedio</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">15 min</span>
+          <span class="stat-label">Tiempo de respuesta</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="how-it-works" id="como-funciona">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Simple y rápido</span>
+        <h2>¿Cómo funciona Chambea?</h2>
+        <p>En tres pasos tienes al profesional en tu puerta</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <div class="step-icon">🔍</div>
+          <h3>Busca y filtra</h3>
+          <p>Selecciona la categoría, tu ciudad o municipio y encuentra al profesional ideal para tu necesidad.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <div class="step-icon">📞</div>
+          <h3>Contacta directo</h3>
+          <p>Habla directamente con el trabajador por WhatsApp. Sin intermediarios, sin comisiones ocultas.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <div class="step-icon">⭐</div>
+          <h3>Califica el servicio</h3>
+          <p>Una vez finalizado el trabajo, deja tu reseña y ayuda a la comunidad a elegir mejor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIAS -->
+  <section class="categories-section" id="categorias">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Explora</span>
+        <h2>Todas las categorías</h2>
+        <p>Más de 20 oficios disponibles en tu ciudad</p>
+      </div>
+      <div class="categories-grid">
+        <div class="cat-card active-cat" data-cat="">
+          <div class="cat-icon">🏠</div>
+          <span>Todos</span>
+        </div>
+        <div class="cat-card" data-cat="Plomero">
+          <div class="cat-icon">🔧</div>
+          <span>Plomería</span>
+        </div>
+        <div class="cat-card" data-cat="Electricista">
+          <div class="cat-icon">⚡</div>
+          <span>Electricidad</span>
+        </div>
+        <div class="cat-card" data-cat="Pintor">
+          <div class="cat-icon">🎨</div>
+          <span>Pintura</span>
+        </div>
+        <div class="cat-card" data-cat="Limpieza">
+          <div class="cat-icon">🧹</div>
+          <span>Limpieza</span>
+        </div>
+        <div class="cat-card" data-cat="Carpintero">
+          <div class="cat-icon">🪚</div>
+          <span>Carpintería</span>
+        </div>
+        <div class="cat-card" data-cat="Aire acondicionado">
+          <div class="cat-icon">❄️</div>
+          <span>Aire Acond.</span>
+        </div>
+        <div class="cat-card" data-cat="Cerrajero">
+          <div class="cat-icon">🔐</div>
+          <span>Cerrajería</span>
+        </div>
+        <div class="cat-card" data-cat="Jardinero">
+          <div class="cat-icon">🌿</div>
+          <span>Jardinería</span>
+        </div>
+        <div class="cat-card" data-cat="Albañil">
+          <div class="cat-icon">🧱</div>
+          <span>Albañilería</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRABAJADORES -->
+  <section class="workers-section" id="trabajadores">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Profesionales destacados</span>
+        <h2>Trabajadores verificados</h2>
+        <p>Todos nuestros profesionales pasan por un proceso de verificación de identidad y referencias</p>
+      </div>
+
+      <div class="filter-bar">
+        <div class="filter-left">
+          <span class="results-count" id="resultsCount">Mostrando 12 profesionales</span>
+        </div>
+        <div class="filter-right">
+          <select id="sortFilter" class="filter-select">
+            <option value="rating">Mejor calificados</option>
+            <option value="reviews">Más reseñas</option>
+            <option value="name">Nombre A-Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="workers-grid" id="workersGrid">
+        <!-- Injected by JS -->
+      </div>
+
+      <div class="empty-state" id="emptyState" style="display:none;">
+        <div class="empty-icon">🔍</div>
+        <h3>No encontramos resultados</h3>
+        <p>Intenta con otra categoría o ciudad</p>
+        <button class="btn-secondary" onclick="resetFilters()">Ver todos los profesionales</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA TRABAJADORES -->
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <div class="cta-content">
+        <span class="cta-badge">¿Eres un profesional?</span>
+        <h2>Únete a Chambea y consigue más clientes</h2>
+        <p>Más de 2,400 trabajadores ya están generando ingresos a través de nuestra plataforma. Es gratis registrarse.</p>
+        <ul class="cta-benefits">
+          <li>✅ Perfil verificado con sello de confianza</li>
+          <li>✅ Clientes directamente a tu WhatsApp</li>
+          <li>✅ Sin comisiones por cada trabajo</li>
+          <li>✅ Construye tu reputación con reseñas</li>
+        </ul>
+        <button class="btn-cta-main" id="openSignupCta">Registrarme gratis</button>
+      </div>
+      <div class="cta-image">
+        <div class="cta-card-mock">
+          <div class="mock-avatar">👷</div>
+          <div class="mock-info">
+            <div class="mock-name">Tu nombre aquí</div>
+            <div class="mock-skill">Tu oficio</div>
+            <div class="mock-stars">★★★★★</div>
+          </div>
+          <div class="mock-badge">✓ Verificado</div>
+        </div>
+        <div class="floating-notif">
+          <span>🔔</span>
+          <div>
+            <strong>Nuevo cliente</strong>
+            <p>María G. quiere contactarte</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Reseñas reales</span>
+        <h2>Lo que dice la gente</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"Contraté a un electricista en menos de 20 minutos. Llegó puntual, hizo el trabajo perfecto y el precio fue justo. ¡Chambea de verdad!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">LM</div>
+            <div>
+              <strong>Laura Mendoza</strong>
+              <span>Caracas, El Paraíso</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card featured-testimonial">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"Como plomero, conseguí 3 nuevos clientes la primera semana. Ahora tengo trabajo fijo gracias a Chambea. Es la mejor plataforma para los que chambéamos duro."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RG</div>
+            <div>
+              <strong>Rafael González</strong>
+              <span>Plomero — Caracas</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"Le pregunté por el pintor a mi vecina y me dijo que lo había conseguido en Chambea. Ya tengo mi apartamento recién pintado. Excelente servicio."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">CJ</div>
+            <div>
+              <strong>Carmen Jiménez</strong>
+              <span>Caracas, Altamira</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo logo-light">
+          <span class="logo-icon">⚡</span>
+          <span class="logo-text">Chambea</span>
+        </a>
+        <p>La plataforma venezolana que conecta familias con los mejores trabajadores de oficios. Rápido, seguro y sin complicaciones.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">Instagram</a>
+          <a href="#" class="social-link">WhatsApp</a>
+          <a href="#" class="social-link">Twitter</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Plataforma</h4>
+          <ul>
+            <li><a href="#">Cómo funciona</a></li>
+            <li><a href="#">Categorías</a></li>
+            <li><a href="#">Profesionales</a></li>
+            <li><a href="#">Ciudades</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Para trabajadores</h4>
+          <ul>
+            <li><a href="#" id="openSignupFooter">Registrarse</a></li>
+            <li><a href="#">Verificación</a></li>
+            <li><a href="#">Consejos</a></li>
+            <li><a href="#">Comunidad</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Prensa</a></li>
+            <li><a href="#">Términos</a></li>
+            <li><a href="#">Privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Chambea. Hecho con ❤️ en Venezuela. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SIGNUP MODAL -->
+  <div class="modal-overlay" id="signupModal">
+    <div class="modal">
+      <button class="modal-close" id="closeModal">✕</button>
+      <div class="modal-header">
+        <span class="modal-icon">⚡</span>
+        <h2>Crea tu perfil en Chambea</h2>
+        <p>Completa tu información y empieza a recibir clientes hoy</p>
+      </div>
+      <form class="signup-form" id="signupForm" novalidate>
+
+        <!-- FOTO -->
+        <div class="form-group">
+          <label>Tu foto de perfil</label>
+          <div class="photo-upload-area" id="photoUploadArea">
+            <div class="photo-preview" id="photoPreview">
+              <span class="photo-placeholder-icon">📷</span>
+              <span>Toca para subir una foto</span>
+            </div>
+            <input type="file" id="photoInput" accept="image/*" style="display:none" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nombre completo *</label>
+            <input type="text" id="sf-name" placeholder="Ej. Juan Pérez" required />
+          </div>
+          <div class="form-group">
+            <label>WhatsApp *</label>
+            <input type="tel" id="sf-phone" placeholder="04121234567" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Tu oficio *</label>
+            <select id="sf-skill" required>
+              <option value="">Selecciona tu especialidad</option>
+              <option>Plomero</option>
+              <option>Electricista</option>
+              <option>Pintor</option>
+              <option>Carpintero</option>
+              <option>Limpieza</option>
+              <option>Aire acondicionado</option>
+              <option>Cerrajero</option>
+              <option>Jardinero</option>
+              <option>Albañil</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Precio por hora (USD) *</label>
+            <div class="input-prefix-wrap">
+              <span class="input-prefix">$</span>
+              <input type="number" id="sf-price" placeholder="15" min="1" max="500" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Ciudad *</label>
+            <select id="sf-city" required>
+              <option value="">Selecciona tu ciudad</option>
+              <option>Caracas</option>
+              <option>Maracaibo</option>
+              <option>Valencia</option>
+              <option>Barquisimeto</option>
+              <option>Maracay</option>
+              <option>Puerto La Cruz</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Zona / Municipio</label>
+            <input type="text" id="sf-zone" placeholder="Ej. Chacao, Baruta..." />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Descripción de tus servicios *</label>
+          <textarea id="sf-desc" rows="3" placeholder="Cuéntanos qué haces, tu experiencia y qué te diferencia..." required></textarea>
+        </div>
+
+        <div class="form-check">
+          <input type="checkbox" id="terms" required />
+          <label for="terms">Acepto los <a href="#">términos y condiciones</a> de Chambea</label>
+        </div>
+        <button type="submit" class="btn-form-submit">Publicar mi perfil →</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- REVIEW MODAL -->
+  <div class="modal-overlay" id="reviewModal">
+    <div class="modal modal-review">
+      <button class="modal-close" id="closeReviewModal">✕</button>
+      <div class="modal-header">
+        <div id="reviewWorkerPreview"></div>
+        <h2>Deja tu reseña</h2>
+        <p>¿Cómo fue tu experiencia con este profesional?</p>
+      </div>
+
+      <!-- STAR PICKER -->
+      <div class="star-picker" id="starPicker">
+        <span class="star-pick" data-val="1">★</span>
+        <span class="star-pick" data-val="2">★</span>
+        <span class="star-pick" data-val="3">★</span>
+        <span class="star-pick" data-val="4">★</span>
+        <span class="star-pick" data-val="5">★</span>
+      </div>
+      <p class="star-label" id="starLabel">Selecciona una calificación</p>
+
+      <form class="review-form" id="reviewForm">
+        <input type="hidden" id="rv-workerId" />
+        <input type="hidden" id="rv-rating" value="0" />
+        <div class="form-group">
+          <label>Tu nombre</label>
+          <input type="text" id="rv-name" placeholder="Ej. María González" />
+        </div>
+        <div class="form-group">
+          <label>Tu comentario *</label>
+          <textarea id="rv-comment" rows="3" placeholder="Describe tu experiencia con este profesional..." required></textarea>
+        </div>
+        <button type="submit" class="btn-form-submit">Publicar reseña →</button>
+      </form>
+
+      <!-- REVIEWS LIST -->
+      <div class="reviews-list" id="reviewsList"></div>
+    </div>
+  </div>
+
+  <!-- CONTACT MODAL -->
+  <div class="modal-overlay" id="contactModal">
+    <div class="modal modal-contact">
+      <button class="modal-close" id="closeContactModal">✕</button>
+      <div class="modal-header">
+        <div class="contact-worker-preview" id="contactWorkerPreview"></div>
+      </div>
+      <div class="contact-options">
+        <a href="#" class="contact-btn whatsapp" id="whatsappLink">
+          <span>💬</span> Contactar por WhatsApp
+        </a>
+        <a href="#" class="contact-btn call" id="callLink">
+          <span>📞</span> Llamar ahora
+        </a>
+      </div>
+      <p class="contact-note">Al hacer clic serás redirigido directamente con el profesional. Chambea no cobra comisión.</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
