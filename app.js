@@ -78,13 +78,55 @@ const defaultWorkers = [
     reviews: 5,
     experience: "8 años",
     jobs: 15,
-    price: 15,
+    price: 25,
     description: "Técnico especialista en instalación, mantenimiento y reparación de aires acondicionados residenciales y comerciales en Caracas. Servicio rápido, garantizado y con repuestos originales.",
     phone: "584261160067",
     available: true,
     verified: true,
     avatar: "JR",
     avatarColor: "#0369A1",
+    photo: null,
+    userCreated: false
+  },
+  {
+    id: 5,
+    name: "Temisto Mencias",
+    skill: "Remodelaciones",
+    icon: "🏗️",
+    city: "Caracas",
+    zone: "Toda Caracas",
+    rating: 4.8,
+    reviews: 3,
+    experience: "15 años",
+    jobs: 20,
+    price: null,
+    description: "Especialista en remodelaciones con 15 años de experiencia. Maneja construcción general, impermeabilización, plomería y electricidad. Presupuesto personalizado después de evaluar el trabajo.",
+    phone: "584120178428",
+    available: true,
+    verified: true,
+    avatar: "TM",
+    avatarColor: "#7C3AED",
+    photo: null,
+    userCreated: false
+  },
+  {
+    id: 6,
+    name: "Adilio",
+    skill: "Pintor",
+    icon: "🎨",
+    city: "Caracas",
+    zone: "Toda Caracas",
+    rating: 4.7,
+    reviews: 4,
+    experience: "10 años",
+    jobs: 16,
+    price: null,
+    description: "Pintor profesional con 10 años de experiencia en Caracas. Pintura interior, exterior, fachadas y acabados. Presupuesto por metro cuadrado después de evaluar el espacio.",
+    phone: "584241528231",
+    available: true,
+    verified: true,
+    avatar: "AD",
+    avatarColor: "#D97706",
     photo: null,
     userCreated: false
   }
@@ -94,7 +136,7 @@ const defaultWorkers = [
 const SKILL_ICONS = {
   "Plomero": "🔧", "Electricista": "⚡", "Pintor": "🎨",
   "Limpieza": "🧹", "Carpintero": "🪚", "Aire acondicionado": "❄️",
-  "Cerrajero": "🔐", "Jardinero": "🌿", "Albañil": "🧱", "Otro": "🛠️"
+  "Cerrajero": "🔐", "Jardinero": "🌿", "Albañil": "🧱", "Remodelaciones": "🏗️", "Otro": "🛠️"
 };
 
 const AVATAR_COLORS = [
